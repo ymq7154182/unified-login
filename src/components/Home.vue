@@ -152,7 +152,7 @@
               <span>STEAM</span>
             </div>
           </div>
-          <div class="morepart">
+          <div class="morepart" @click="gotopage11">
             <div class="circlemore">
               <i class="ymq-iconweizhigeshi styleword"></i>
             </div>
@@ -206,7 +206,7 @@ export default {
       window.open(url, '_blank')
     },
     gotopage8 () {
-      var url = 'http://zhiheyikaoqin.cn/show/sdc/sdc/index.html#/course'
+      var url = 'http://zhongkeruitong.top/show/sdc/sdc/index.html?from=singlemessage&isappinstalled=0#/tech'
       window.open(url, '_blank')
     },
     gotopage9 () {
