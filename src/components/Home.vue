@@ -136,7 +136,7 @@
               <span>活动实时分析</span>
             </div>
           </div>
-          <div class="morepart">
+          <div class="morepart" @click="gotopage13">
             <div class="circlemore">
               <i class="ymq-iconbianjisekuai styleword"></i>
             </div>
@@ -178,7 +178,7 @@ export default {
   },
   methods: {
     gotopage1 () {
-      var url = 'http://zhongkeruitong.top/show/class_system/#/login'
+      var url = 'http://zhongkeruitong.top/class_system/#/login'
       window.open(url, '_blank')
     },
     gotopage2 () {
@@ -221,8 +221,12 @@ export default {
       var url = 'http://36.112.18.33:8080/cmf/login'
       window.open(url, '_blank')
     },
-    gotopage12 () {
-      var url = 'http://58.119.112.15:11010'
+    // gotopage12 () {
+    //   var url = 'http://58.119.112.15:11010'
+    //   window.open(url, '_blank')
+    // },
+    gotopage13 () {
+      var url = 'http://114.242.223.253/zihui/#/'
       window.open(url, '_blank')
     }
   }
