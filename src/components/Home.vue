@@ -49,8 +49,8 @@
           <div style="font-size: 28px">
             <i class="ymq-iconright" style="font-size: 28px"></i>
             <span>
-                如何让因材施教的教育梦想照进现实?
-              </span>
+                多方面，全流程，智能化教学管理
+            </span>
           </div>
           <div  class="part3word">
             <span>智慧教学</span>
@@ -59,7 +59,7 @@
         <el-card class="box-card box-card1" shadow="hover" @click.native="gotopage1">
           <div class="circle circle1"></div>
           <div class="word1">
-            <span>智能排课</span>
+            <span>支持走班的智能选排课系统</span>
           </div>
           <div class="word2">
             <span>新课改走班制下学生自主选课与多约束条件下智能排课服务系统</span>
@@ -68,7 +68,7 @@
         <el-card class="box-card box-card6"  shadow="hover" @click.native="gotopage6">
           <div class="circle circle6"></div>
           <div class="word1">
-            <span>学生考勤</span>
+            <span>考勤管理与课堂小助手</span>
           </div>
           <div class="word2">
             <span>走班制下的实时监测课堂考勤及学生安全管理的家校互动平台</span>
@@ -77,7 +77,7 @@
         <el-card class="box-card box-card2"  shadow="hover" @click.native="gotopage2">
           <div class="circle circle2"></div>
           <div class="word1">
-            <span>成绩分析</span>
+            <span>成绩统一管理与自动分析系统</span>
           </div>
           <div class="word2">
             <span>多源的成绩综合管理平台，学生成绩挖掘与智能提升，服务于教师及学校对成绩的多维分析</span>
@@ -90,7 +90,7 @@
           <div style="font-size: 28px">
             <i class="ymq-iconright" style="font-size: 28px"></i>
             <span>
-                如何让因材施教的教育梦想照进现实?
+                致力于学生学习的多元化，全方位的智能平台
               </span>
           </div>
           <div  class="part3word">
@@ -99,28 +99,28 @@
         </div>
         <div class="divchild2">
           <div class="child2">
-            <div class="child21 childhover1" @click="gotopage2"></div>
-            <div class="child22 childhover1" @click="gotopage13">
+            <div class="child21 childhover1" @click="gotopage14"></div>
+            <div class="child22 childhover1 linehover" @click="gotopage13">
               <div  class="childtext">
                 <div>
                   <div class="childline"></div>
-                  <div>语文智慧写作平台</div>
+                  <div>语文作文·智慧写作平台</div>
                 </div>
               </div>
             </div>
             <div class="child23 childhover1"></div>
           </div>
           <div class="child2">
-            <div class="child31 childhover2" @click="gotopage2">
+            <div class="child31 childhover2 linehover" @click="gotopage14">
               <div  class="childtext">
                 <div>
                   <div class="childline"></div>
-                  <div>学生成绩分析与提升平台</div>
+                  <div>学生成绩挖掘分析平台</div>
                 </div>
               </div>
             </div>
             <div class="child32 childhover2" @click="gotopage13"></div>
-            <div class="child33 childhover2">
+            <div class="child33 childhover2 linehover">
               <div  class="childtext">
                 <div>
                   <div class="childline"></div>
@@ -132,6 +132,32 @@
         </div>
       </div>
       <div class="line"></div>
+      <div class="part4">
+        <div class="part41">
+          <div style="font-size: 28px">
+            <i class="ymq-iconright" style="font-size: 28px"></i>
+            <span>
+                高效、简洁、一体化的智能管理平台
+              </span>
+          </div>
+          <div  class="part3word">
+            <span>智能管理</span>
+          </div>
+        </div>
+        <div class="part41">
+          <div style="height: 300px" class="part411 part421" @click="gotopage4"></div>
+          <div class="word1">
+            <span>学校资产精准管理整合平台</span>
+          </div>
+        </div>
+        <div class="part41">
+          <div style="height: 300px" class="part411 part422" @click="gotopage16"></div>
+          <div class="word1">
+            <span>校园餐饮小督查平台</span>
+          </div>
+        </div>
+      </div>
+      <div class="line"></div>
       <div class="text">
         <span style="font-size: 28px">智能“评”与“测”</span>
       </div>
@@ -139,25 +165,25 @@
         <el-card class="box-card box-card7"  shadow="hover" @click.native="gotopage7">
           <div class="circle circle7"></div>
           <div class="word1">
-            <span>教师评价</span>
+            <span>教师绩效评价与发展平台</span>
           </div>
           <div class="word2">
             <span>实时记录教师各项工作，辅助学校对教师绩效进行评价，并作为教师成长档案，推动教师发展</span>
           </div>
         </el-card>
         <el-card class="box-card box-card1" shadow="hover" @click.native="gotopage9">
-          <div class="circle circle1"></div>
+          <div class="circle circle9"></div>
           <div class="word1">
-            <span>评教评学</span>
+            <span>在线评教评学与实时分析</span>
           </div>
           <div class="word2">
-            <span>新课改走班制下学生自主选课与多约束条件下智能排课服务系统</span>
+            <span>实现自动化高效率评教评学及即时多维度的统计分析</span>
           </div>
         </el-card>
         <el-card class="box-card box-card8"  shadow="hover" @click.native="gotopage8">
           <div class="circle circle8"></div>
           <div class="word1">
-            <span>学涯规划</span>
+            <span>学涯评测与认知规划平台</span>
           </div>
           <div class="word2">
             <span>学生测评数据、学习过程数据等融合运用，构建有效的学生兴趣与能力倾向画像，促进学涯发展</span>
@@ -166,13 +192,14 @@
         <el-card class="box-card box-card3"  shadow="hover" @click.native="gotopage3">
           <div class="circle circle3"></div>
           <div class="word1">
-            <span>高考预测</span>
+            <span>高考志愿填报预测系统</span>
           </div>
           <div class="word2">
             <span>基于全量、多维、真实的覆盖十年的考录数据，提供高考志愿的智能推荐，及一站式的报考服务</span>
           </div>
         </el-card>
       </div>
+
       <!--<div class="text">-->
       <!--<span style="font-size: 28px">智能校园</span>-->
       <!--</div>-->
@@ -253,10 +280,13 @@
       <!--</el-card>-->
       <!--</div>-->
       <div class="text">
-        <span style="font-size: 28px">“STEM”课程与管理平台</span>
+        <span style="font-size: 28px">“STEM”课程</span>
+      </div>
+      <div class="word5" style="margin-bottom: 40px">
+        <span>为中小学生量身打造的，适应不同学习层次的，系列化的、 具备标准体系的AI实践课程</span>
       </div>
       <div class="part2">
-        <div class="morepart">
+        <div class="morepart" @click="gotopage15">
           <div class="circlemore">
             <i class="ymq-iconwuguan styleword"></i>
           </div>
@@ -280,22 +310,22 @@
             <span>智能交通信号控制</span>
           </div>
         </div>
-        <div class="morepart"  @click="gotopage4">
-          <div class="circlemore">
-            <i class="ymq-iconshebeiguanli styleword"></i>
-          </div>
-          <div class="word1">
-            <span>学校资产精准管理服务系统</span>
-          </div>
-        </div>
-        <div class="morepart">
-          <div class="circlemore">
-            <i class="ymq-iconweizhigeshi styleword"></i>
-          </div>
-          <div class="word1">
-            <span>校餐饮管理</span>
-          </div>
-        </div>
+        <!--<div class="morepart"  @click="gotopage4">-->
+          <!--<div class="circlemore">-->
+            <!--<i class="ymq-iconshebeiguanli styleword"></i>-->
+          <!--</div>-->
+          <!--<div class="word1">-->
+            <!--<span>学校资产精准管理服务系统</span>-->
+          <!--</div>-->
+        <!--</div>-->
+        <!--<div class="morepart">-->
+          <!--<div class="circlemore">-->
+            <!--<i class="ymq-iconweizhigeshi styleword"></i>-->
+          <!--</div>-->
+          <!--<div class="word1">-->
+            <!--<span>校餐饮管理</span>-->
+          <!--</div>-->
+        <!--</div>-->
       </div>
       <Footer/>
     </div>
@@ -318,6 +348,10 @@ export default {
       window.open(url, '_blank')
     },
     gotopage2 () {
+      var url = 'http://zhongkeruitong.top/show/scoreAprile/static/teacherscore/index.html'
+      window.open(url, '_blank')
+    },
+    gotopage14 () {
       var url = 'http://zhongkeruitong.top/show/scoreAprile/static/teacher.html#/login'
       window.open(url, '_blank')
     },
@@ -364,6 +398,14 @@ export default {
     gotopage13 () {
       var url = 'http://114.242.223.253/zihui/#/'
       window.open(url, '_blank')
+    },
+    gotopage15 () {
+      var url = 'http://zhongkeruitong.top/python_course/'
+      window.open(url, '_blank')
+    },
+    gotopage16 () {
+      var url = 'http://zhongkeruitong.top/show/canteen-system/wechat/authorize?returnUrl=/index.html&path=menu'
+      window.open(url, '_blank')
     }
   }
 }
@@ -379,7 +421,7 @@ export default {
   }
   .homebb {
     height: 665px;
-    background: url("../assets/img_bg_1.png");
+    background: url("../assets/6666.jpg");
     background-size: 100%;
     position: relative;
   }
@@ -420,6 +462,14 @@ export default {
   .part2 .morepart {
     flex: 1;
     margin-left: 20px;
+  }
+  .part4 {
+    height: 350px;
+    display: flex;
+  }
+  .part4 .part41 {
+    flex: 1;
+    margin-right: 40px;
   }
   .morepart {
     width: 100%;
@@ -496,7 +546,7 @@ export default {
   }
   .circle1 {
     background: url("../assets/3233.png");
-    background-size: 100%;
+    background-size: 100% 100%;
   }
   .circle2 {
     background: url("../assets/5544.png");
@@ -526,6 +576,10 @@ export default {
     background: url("../assets/134444.png");
     background-size: 100%;
   }
+  .circle9 {
+    background: url("../assets/074.jpg");
+    background-size: 100% 100%;
+  }
   .word1 {
     text-align: center;
     margin-top: 20px;
@@ -536,6 +590,14 @@ export default {
     margin-top: 10px;
     font-size: 18px;
     color: #999999;
+  }
+  .word5 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #999999;
+  }
+  .word4 {
   }
   .styleword {
     font-size: 40px;
@@ -549,15 +611,15 @@ export default {
     /*color: #575757;*/
   }
   .hometext1 {
-    top: 25%;
+    top: 18%;
     font-size: 48px
   }
   .hometext2 {
-    top: 38%;
+    top: 40%;
     font-size: 24px
   }
   .hometext3 {
-    top: 48%;
+    top: 49%;
   }
   .homepart {
     width: 95%;
@@ -639,10 +701,15 @@ export default {
     width: 90%;margin: 40px auto;border: 1px solid #ebeef5
   }
   .childtext {
-    color: #7C7C7C;font-weight: bold;width: 200px;margin-left: 40px;margin-top: 100px
+    color: #7C7C7C;font-weight: bold;width: 200px;margin-left: 40px;margin-top: 100px;
   }
   .childline {
-    border: 1px solid black;width: 40px;margin-bottom: 20px
+    border: 1px solid black;width: 40px;margin-bottom: 20px;
+    transition: all 1s;
+  }
+  .linehover:hover .childline {
+    width: 150px;
+    border: 1px solid #99CCCC;
   }
   .childhover1 {
     transition: all 0.6s;
@@ -661,5 +728,29 @@ export default {
     transform: translateY(10px);
     box-shadow: 0 5px 5px grey;
     /*border-radius: 50%;*/
+  }
+  .part411 {
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px grey;
+    transition: all 0.6s;
+  }
+  .part421 {
+    background: url("../assets/1235.png");
+    background-size: 100% 100%;
+  }
+  .part422 {
+    background: url("../assets/1333.jpg");
+    background-size: 100% 100%;
+  }
+  .part421:hover {
+    transform: translate(-10px,-10px);
+    border-radius: 40px;
+    cursor: pointer;
+  }
+  .part422:hover {
+    transform: translate(10px,-10px);
+    border-radius: 40px;
+    cursor: pointer;
   }
 </style>

@@ -9,10 +9,10 @@
         <img src="../../assets/99999.jpg" height="70" style="margin-left: 40px;margin-top: 10px">
       </div>
       <ul class="fr">
-        <li><a href="">产品</a></li>
-        <li><a href="">案例</a></li>
-        <li><a href="">社区</a></li>
-        <li><a href="">我们</a></li>
+        <li><a href="#">产品</a></li>
+        <li><a href="#">案例</a></li>
+        <li><a href="#">社区</a></li>
+        <li><a href="#" @click="gotousetext" class="textuse"><i class="ymq-iconshiyongwendang"></i> 使用说明</a></li>
         <li>
           <el-button type="primary" round class="buttonlogin" @click="login" v-if="flag">登录</el-button>
           <el-avatar :size="50" :src="circleUrl" v-if="flag===0" style="margin-top: 10px"></el-avatar>
@@ -79,6 +79,12 @@ export default {
       if (command === 'out') {
         this.flag = 1
       }
+    },
+    gotousetext () {
+      const {href} = this.$router.resolve({
+        path: `/usetext`
+      })
+      window.open(href, '_blank')
     }
   }
 }
@@ -107,6 +113,9 @@ export default {
     text-decoration: none; /*取消下划线*/
     font-size: 16px;
     color: black;
+  }
+  .textuse:hover {
+    color: #66CCFF;
   }
   ul {
     list-style: none;
