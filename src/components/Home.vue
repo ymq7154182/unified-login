@@ -294,6 +294,14 @@
             <span>Python数据科学与AI</span>
           </div>
         </div>
+        <div class="morepart" @click="gotopage17">
+          <div class="circlemore">
+            <i class="ymq-iconsave styleword"></i>
+          </div>
+          <div class="word1">
+            <span>python趣味编程与计算思维</span>
+          </div>
+        </div>
         <div class="morepart" @click="gotopage12">
           <div class="circlemore">
             <i class="ymq-iconrenjijiaohu styleword"></i>
@@ -405,6 +413,10 @@ export default {
     },
     gotopage16 () {
       var url = 'http://zhongkeruitong.top/show/canteen-system/wechat/authorize?returnUrl=/index.html&path=menu'
+      window.open(url, '_blank')
+    },
+    gotopage17 () {
+      var url = 'http://zhongkeruitong.top/show/pycourse/index.html#/'
       window.open(url, '_blank')
     }
   }
