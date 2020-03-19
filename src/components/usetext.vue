@@ -129,7 +129,7 @@
                 <p>点击首页相关链接进行查看</p>
               </div>
               <div>
-                <p>测试账号：100520 密码：123456</p>
+                <p>测试账号：90807895 密码：123456</p>
               </div>
               <div style="margin-top: 30px">
                 <el-button @click="prepage" type="primary">上一页</el-button>

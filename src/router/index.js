@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
 import Usetext from '@/components/usetext'
+import AICourse from '../components/AICourse'
 
 Vue.use(Router)
 
@@ -16,6 +17,11 @@ export default new Router({
       path: '/usetext',
       name: 'usetext',
       component: Usetext
+    },
+    {
+      path: '/AICourse',
+      name: 'AICourse',
+      component: AICourse
     }
   ]
 })

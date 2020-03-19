@@ -20,7 +20,7 @@
         <span>智慧管理、智慧教学、学涯规划、智慧学习</span>
       </div>
       <div class="hometext hometext3">
-        <el-button type="primary" round style="width: 150px;height: 50px">了解详情</el-button>
+        <el-button type="primary" round style="width: 150px;height: 50px" @click="gotocontent">了解详情</el-button>
       </div>
     </div>
     <div class="home1">
@@ -37,7 +37,7 @@
       <!--&lt;!&ndash;<img src="../assets/22222.png" width="800px">&ndash;&gt;-->
       <!--&lt;!&ndash;</div>&ndash;&gt;-->
       <!--</div>-->
-      <div class="part" style="margin-top: 150px">
+      <div class="part" style="margin-top: 150px" id="here">
         <el-card style="width: 100%"  shadow="never">
           <!--<div class="circle circle7"></div>-->
           <!--<div class="word1">-->
@@ -53,7 +53,7 @@
             </span>
           </div>
           <div  class="part3word">
-            <span>智慧教学</span>
+            <span>智能化教学管理</span>
           </div>
         </el-card>
         <el-card class="box-card box-card1" shadow="hover" @click.native="gotopage1">
@@ -74,13 +74,13 @@
             <span>走班制下的实时监测课堂考勤及学生安全管理的家校互动平台</span>
           </div>
         </el-card>
-        <el-card class="box-card box-card2"  shadow="hover" @click.native="gotopage2">
+        <el-card class="box-card box-card2"  shadow="hover" @click.native="gotopage9">
           <div class="circle circle2"></div>
           <div class="word1">
-            <span>成绩统一管理与自动分析系统</span>
+            <span>在线评教评学与实时分析</span>
           </div>
           <div class="word2">
-            <span>多源的成绩综合管理平台，学生成绩挖掘与智能提升，服务于教师及学校对成绩的多维分析</span>
+            <span>实现自动化高效率评教评学及即时多维度的统计分析</span>
           </div>
         </el-card>
       </div>
@@ -94,43 +94,58 @@
               </span>
           </div>
           <div  class="part3word">
-            <span>智能学习</span>
+            <span>智慧学习平台</span>
           </div>
         </div>
         <div class="divchild2">
           <div class="child2">
-            <div class="child21 childhover1" @click="gotopage14"></div>
-            <div class="child22 childhover1 linehover" @click="gotopage13">
-              <div  class="childtext">
-                <div>
-                  <div class="childline"></div>
-                  <div>语文作文·智慧写作平台</div>
+            <div class="child21 childhover1 childs" @click="gotopage14">
+              <div class="child211">
+                <div class="childtext2">
+                  <div class="childline2"></div>
+                  <span>学生成绩挖掘分析平台</span>
                 </div>
               </div>
             </div>
-            <div class="child23 childhover1"></div>
-          </div>
-          <div class="child2">
-            <div class="child31 childhover2 linehover" @click="gotopage14">
-              <div  class="childtext">
-                <div>
-                  <div class="childline"></div>
-                  <div>学生成绩挖掘分析平台</div>
+            <div class="child22 childhover1 childs" @click="gotopage13">
+              <div class="child211">
+                <div class="childtext2">
+                  <div class="childline2"></div>
+                  <span>语文作文·智慧写作平台</span>
                 </div>
               </div>
             </div>
-            <div class="child32 childhover2" @click="gotopage13"></div>
-            <div class="child33 childhover2 linehover">
-              <div  class="childtext">
-                <div>
-                  <div class="childline"></div>
-                  <div>活动节考勤与即时分析</div>
+            <div class="child23 childhover1 childs" @click="gotopage2">
+              <div class="child211">
+                <div class="childtext2">
+                  <div class="childline2"></div>
+                  <span>成绩统一管理与自动分析系统</span>
                 </div>
               </div>
             </div>
           </div>
+          <!--<div class="child2">-->
+            <!--<div class="child31 childhover2 linehover" @click="gotopage14">-->
+              <!--<div  class="childtext">-->
+                <!--<div>-->
+                  <!--<div class="childline"></div>-->
+                  <!--<div>学生成绩挖掘分析平台</div>-->
+                <!--</div>-->
+              <!--</div>-->
+            <!--</div>-->
+            <!--<div class="child32 childhover2" @click="gotopage13"></div>-->
+            <!--<div class="child33 childhover2 linehover" @click="gotopage2">-->
+              <!--<div  class="childtext">-->
+                <!--<div>-->
+                  <!--<div class="childline"></div>-->
+                  <!--<div>成绩统一管理与自动分析系统</div>-->
+                <!--</div>-->
+              <!--</div>-->
+            <!--</div>-->
+          <!--</div>-->
         </div>
       </div>
+
       <div class="line"></div>
       <div class="part4">
         <div class="part41">
@@ -141,19 +156,25 @@
               </span>
           </div>
           <div  class="part3word">
-            <span>智能管理</span>
+            <span>校园智能管理服务</span>
           </div>
         </div>
         <div class="part41">
-          <div style="height: 300px" class="part411 part421" @click="gotopage4"></div>
+          <div style="height: 250px" class="part411 part421" @click="gotopage4"></div>
           <div class="word1">
             <span>学校资产精准管理整合平台</span>
           </div>
         </div>
         <div class="part41">
-          <div style="height: 300px" class="part411 part422" @click="gotopage16"></div>
+          <div style="height: 250px" class="part411 part422" @click="gotopage16"></div>
           <div class="word1">
-            <span>校园餐饮小督查平台</span>
+            <span>智慧餐评</span>
+          </div>
+        </div>
+        <div class="part41">
+          <div style="height: 250px" class="part411 part423"></div>
+          <div class="word1">
+            <span>活动节考勤与即时分析</span>
           </div>
         </div>
       </div>
@@ -171,15 +192,15 @@
             <span>实时记录教师各项工作，辅助学校对教师绩效进行评价，并作为教师成长档案，推动教师发展</span>
           </div>
         </el-card>
-        <el-card class="box-card box-card1" shadow="hover" @click.native="gotopage9">
-          <div class="circle circle9"></div>
-          <div class="word1">
-            <span>在线评教评学与实时分析</span>
-          </div>
-          <div class="word2">
-            <span>实现自动化高效率评教评学及即时多维度的统计分析</span>
-          </div>
-        </el-card>
+        <!--<el-card class="box-card box-card1" shadow="hover" @click.native="gotopage9">-->
+          <!--<div class="circle circle9"></div>-->
+          <!--<div class="word1">-->
+            <!--<span>在线评教评学与实时分析</span>-->
+          <!--</div>-->
+          <!--<div class="word2">-->
+            <!--<span>实现自动化高效率评教评学及即时多维度的统计分析</span>-->
+          <!--</div>-->
+        <!--</el-card>-->
         <el-card class="box-card box-card8"  shadow="hover" @click.native="gotopage8">
           <div class="circle circle8"></div>
           <div class="word1">
@@ -302,7 +323,7 @@
             <span>python趣味编程与计算思维</span>
           </div>
         </div>
-        <div class="morepart" @click="gotopage12">
+        <div class="morepart" @click="gotopage18">
           <div class="circlemore">
             <i class="ymq-iconrenjijiaohu styleword"></i>
           </div>
@@ -342,6 +363,7 @@
 <script>
 import Sidebar from '@/components/common/Sidebar'
 import Footer from '@/components/common/Footer'
+import $ from 'jquery'
 export default {
   name: 'Home',
   components: {
@@ -351,12 +373,20 @@ export default {
   mounted () {
   },
   methods: {
+    gotocontent () {
+      // document.getElementById('here').scrollIntoView()
+      var hshight = $($('#here')).offset().top
+      $('html,body').animate({
+        scrollTop: hshight
+      }, 700)
+    },
     gotopage1 () {
       var url = 'http://zhongkeruitong.top/show/class_system/#/login'
       window.open(url, '_blank')
     },
     gotopage2 () {
-      var url = 'http://zhongkeruitong.top/show/scoreAprile/static/teacherscore/index.html'
+      // var url = 'http://zhongkeruitong.top/show/scoreAprile/static/teacherscore/index.html'
+      var url = 'http://zhongkeruitong.top/scoreAprile/static/teacherscore/index.html'
       window.open(url, '_blank')
     },
     gotopage14 () {
@@ -418,6 +448,12 @@ export default {
     gotopage17 () {
       var url = 'http://zhongkeruitong.top/show/pycourse/index.html#/'
       window.open(url, '_blank')
+    },
+    gotopage18 () {
+      const {href} = this.$router.resolve({
+        path: `/AICourse`
+      })
+      window.open(href, '_blank')
     }
   }
 }
@@ -561,8 +597,8 @@ export default {
     background-size: 100% 100%;
   }
   .circle2 {
-    background: url("../assets/5544.png");
-    background-size: 100%;
+    background: url("../assets/68556.jpg");
+    background-size: 100% 100%;
   }
   .circle3 {
     background: url("../assets/4545.png");
@@ -585,8 +621,8 @@ export default {
     background-size: 100%;
   }
   .circle8 {
-    background: url("../assets/134444.png");
-    background-size: 100%;
+    background: url("../assets/444.jpg");
+    background-size: 100% 100%;
   }
   .circle9 {
     background: url("../assets/074.jpg");
@@ -666,7 +702,7 @@ export default {
   }
   .part3 {
     display: flex;
-    height: 480px;
+    height: 240px;
     margin-top: 100px;
     margin-bottom: 50px;
   }
@@ -679,21 +715,76 @@ export default {
   }
   .child2 {
     display: flex;
-    height: 50%;
+    height: 100%;
 
   }
-  .child2 div {
+  .child2 .childs {
+    margin-right: 40px;
     flex: 1;
   }
   .child21 {
     background-image: url("../assets/5544.png");
     background-size: 100% 100%;
   }
+  /*@keyframes goback {*/
+    /*0% {}*/
+    /*100%{*/
+      /*transform: translateY(240px);*/
+    /*}*/
+  /*}*/
+  .child211{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 20px;
+    /*height: 100%;*/
+    opacity: 0;
+    position: relative;
+    transition: all 0.5s;
+  }
+  .child21:hover .child211{
+    border-radius: 10px;
+    height: 100%;
+    opacity: 1;
+    /*animation: goback 1s;*/
+  }
+  .child21:hover .childtext2 {
+    color: #CCCCFF;
+  }
+  .child21:hover .childline2 {
+    width: 150px;
+    border: 1px solid #CCCCFF;
+  }
+  .child22:hover .child211{
+    border-radius: 10px;
+    height: 100%;
+    opacity: 1;
+    /*animation: goback 1s;*/
+  }
+  .child22:hover .childline2 {
+    width: 150px;
+    border: 1px solid #FFCC33;
+  }
+  .child22:hover .childtext2 {
+    color: #FFCC33;
+  }
+  .child23:hover .child211{
+    border-radius: 10px;
+    height: 100%;
+    opacity: 1;
+    /*animation: goback 1s;*/
+  }
+  .child23:hover .childtext2 {
+    color: #E3E9F7;
+  }
+  .child23:hover .childline2 {
+    width: 150px;
+    border: 1px solid #E3E9F7;
+  }
   .child22 {
-    background-color: #F6F6F6;
+    background-image: url("../assets/01231.jpg");
+    background-size: 100% 100%;
   }
   .child23 {
-    background-image: url("../assets/bac.png");
+    background-image: url("../assets/89079.jpg");
     background-size: 100% 100%;
   }
   .child31 {
@@ -715,6 +806,10 @@ export default {
   .childtext {
     color: #7C7C7C;font-weight: bold;width: 200px;margin-left: 40px;margin-top: 100px;
   }
+  .childtext2 {
+    color: white;font-weight: bold;width: 200px;margin-left: 40px;margin-top: 80px;position: absolute;
+    transition: all 2s;
+  }
   .childline {
     border: 1px solid black;width: 40px;margin-bottom: 20px;
     transition: all 1s;
@@ -723,6 +818,11 @@ export default {
     width: 150px;
     border: 1px solid #99CCCC;
   }
+  .childline2 {
+    border: 1px solid white;width: 40px;margin-bottom: 20px;
+    margin-top: 20px;
+    transition: all 1s;
+  }
   .childhover1 {
     transition: all 0.6s;
   }
@@ -730,6 +830,7 @@ export default {
     cursor: pointer;
     transform: translateY(-10px);
     box-shadow: 0 5px 5px grey;
+    border-radius: 10px;
     /*border-radius: 50%;*/
   }
   .childhover2 {
@@ -752,7 +853,7 @@ export default {
     background-size: 100% 100%;
   }
   .part422 {
-    background: url("../assets/1333.jpg");
+    background: url("../assets/55545.jpg");
     background-size: 100% 100%;
   }
   .part421:hover {
@@ -761,6 +862,15 @@ export default {
     cursor: pointer;
   }
   .part422:hover {
+    transform: translateY(-10px);
+    border-radius: 40px;
+    cursor: pointer;
+  }
+  .part423 {
+    background: url("../assets/bac.png");
+    background-size: 100% 100%;
+  }
+  .part423:hover {
     transform: translate(10px,-10px);
     border-radius: 40px;
     cursor: pointer;
